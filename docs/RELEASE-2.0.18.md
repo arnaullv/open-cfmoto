@@ -1,5 +1,9 @@
 # OpenCfMoto 2.0.18 (77)
 
+> **Google updated Android Auto (17.4+). This app still works.** After Connect: AA settings →
+> **Version** ~10× (first time) → ⋮ → **Start head unit server**. Repeat the ⋮ step after a reboot
+> or an AA update. Do **not** uninstall Android Auto updates.
+
 **Latest.** Slim APK (arm64 + R8). `versionCode` **77** — uninstall first when switching from 2.0.13
 or a soak pre.
 
@@ -7,7 +11,7 @@ or a soak pre.
 [OpenCfMoto.apk](https://github.com/zanderp/open-cfmoto/releases/latest/download/OpenCfMoto.apk)
 
 **32-bit ARM** (install says “not compatible” — Galaxy A13 5G / SM-A136B and other 32-bit Android):
-[OpenCfMoto-armv7.apk](https://github.com/zanderp/open-cfmoto/releases/latest/download/OpenCfMoto-armv7.apk)
+[OpenCfMoto.armv7.apk](https://github.com/zanderp/open-cfmoto/releases/latest/download/OpenCfMoto.armv7.apk)
 
 About should read **2.0.18 / 77**.
 

@@ -51,6 +51,16 @@ CFMoto · Voge · Morini · Morbidelli · QJ Motor · Rieju · UM · Wmoto · GO
 > real dashes: **[Dash showcase](docs/SHOWCASE.md)**. Don't rely on it for critical navigation —
 > set your route **before** you ride. Use at your own risk.
 
+> 📣 **Google updated Android Auto (17.4+). OpenCfMoto still works.** Google blocked the automatic
+> start — that is not an app break. After **Connect**:
+> 1. Setup → Android Auto → open AA settings.
+> 2. Tap **Version** ~10 times (first time only) → top-right **⋮** → **Start head unit server**.
+> 3. Leave that notification on. After a phone reboot or an Android Auto update, open the **⋮**
+>    menu again and start the server (no need to tap Version again).
+>
+> Do **not** uninstall Android Auto updates and do **not** downgrade Android Auto.
+> Full steps: [Android Auto setup](#3-android-auto-setup).
+
 ---
 
 ## ✨ Features
@@ -191,7 +201,7 @@ The app isn't on the Play Store — you sideload the APK.
    (direct link: <https://github.com/zanderp/open-cfmoto/releases/latest/download/OpenCfMoto.apk>).
    If Android says the package is **not compatible** (32-bit Android — e.g. Galaxy A13 5G /
    SM-A136B), use
-   [OpenCfMoto-armv7.apk](https://github.com/zanderp/open-cfmoto/releases/latest/download/OpenCfMoto-armv7.apk)
+   [OpenCfMoto.armv7.apk](https://github.com/zanderp/open-cfmoto/releases/latest/download/OpenCfMoto.armv7.apk)
    instead. Most phones from the last few years want the default 64-bit APK.
 2. Tap it in a file manager / your browser downloads to install; allow installation from your
    browser/file manager when Android prompts about "unknown sources".
@@ -207,6 +217,9 @@ The app isn't on the Play Store — you sideload the APK.
 ### 3. Android Auto setup
 
 Android Auto must be installed and allowed to start in "self / head-unit" mode.
+
+**If Maps never appears after Connect, this is almost always the missing step** — not a broken
+OpenCfMoto install. Google’s 17.4+ update blocked the automatic start.
 
 1. Install **Android Auto** from the Play Store (often pre-installed) and open it once to accept its
    terms.
@@ -661,7 +674,7 @@ OpenCfMoto routes and **Connect** for Maps/Waze Android Auto.
 | Dash stays **black** after connecting | Tap **Stop**, then **Connect** / **Scan bike** again. Make sure the dash is on its phone-connection screen. |
 | **No Wi‑Fi dialog** appears | Confirm the Location permission is granted; move the phone next to the bike; tap **Stop** and retry. Some phones show the dialog behind Android Auto — swipe back to OpenCfMoto. |
 | **Android Auto never starts** | On AA 17.4+: open Android Auto → tap Version 10× → ⋮ → **Start head unit server**, then Connect. Also re-check [step 3](#3-android-auto-setup) (developer mode + unknown sources). Do **not** uninstall Android Auto updates. |
-| Install says **not compatible** with this phone | Default Latest is **64-bit only**. Use [OpenCfMoto-armv7.apk](https://github.com/zanderp/open-cfmoto/releases/latest/download/OpenCfMoto-armv7.apk) on 32-bit Android (Galaxy A13 5G / SM-A136B and similar). |
+| Install says **not compatible** with this phone | Default Latest is **64-bit only**. Use [OpenCfMoto.armv7.apk](https://github.com/zanderp/open-cfmoto/releases/latest/download/OpenCfMoto.armv7.apk) on 32-bit Android (Galaxy A13 5G / SM-A136B and similar). |
 | **Auto-connect doesn't fire** | Ensure *Auto-connect* is On, the bike is paired, and its Wi‑Fi is in range; open the app or return to it to retry. |
 | Picture is **stretched / letterboxed** on an unknown bike | Reconnect once so it learns the dash shape, or set the orientation/size manually in Setup. |
 | Dash **froze** and didn't recover | With *Auto-recovery* on it should reconnect itself; otherwise tap **Stop** then **Connect**. |
